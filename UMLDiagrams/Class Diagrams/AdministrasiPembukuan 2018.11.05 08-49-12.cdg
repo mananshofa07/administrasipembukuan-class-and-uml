@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AdministrasiPembukuan">
+  <ClassDiagramComponents>
+    <Class name="guru" package="guru" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="nik" type="int" visibility="package"/>
+        <Field name="nm_guru" type="String" visibility="package"/>
+        <Field name="tempatlahir" type="String" visibility="package"/>
+        <Field name="tgllahir" type="Date" visibility="package"/>
+        <Field name="jk" type="char" visibility="package"/>
+        <Field name="Pendidikanterakhir" type="String" visibility="package"/>
+        <Field name="thlulus" type="String" visibility="package"/>
+        <Field name="alamat" type="String" visibility="package"/>
+        <Field name="pass" type="String" visibility="package"/>
+        <Field name="no_hp" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNik" returnType="int" visibility="public"/>
+        <Method name="setNik" returnType="void" visibility="public">
+          <Argument type="int" name="nik"/>
+        </Method>
+        <Method name="getNm_guru" returnType="String" visibility="public"/>
+        <Method name="setNm_guru" returnType="void" visibility="public">
+          <Argument type="String" name="nm_guru"/>
+        </Method>
+        <Method name="getTempatlahir" returnType="String" visibility="public"/>
+        <Method name="setTempatlahir" returnType="void" visibility="public">
+          <Argument type="String" name="tempatlahir"/>
+        </Method>
+        <Method name="getTgllahir" returnType="Date" visibility="public"/>
+        <Method name="setTgllahir" returnType="void" visibility="public">
+          <Argument type="Date" name="tgllahir"/>
+        </Method>
+        <Method name="getJk" returnType="char" visibility="public"/>
+        <Method name="setJk" returnType="void" visibility="public">
+          <Argument type="char" name="jk"/>
+        </Method>
+        <Method name="getPendidikanterakhir" returnType="String" visibility="public"/>
+        <Method name="setPendidikanterakhir" returnType="void" visibility="public">
+          <Argument type="String" name="Pendidikanterakhir"/>
+        </Method>
+        <Method name="getThlulus" returnType="String" visibility="public"/>
+        <Method name="setThlulus" returnType="void" visibility="public">
+          <Argument type="String" name="thlulus"/>
+        </Method>
+        <Method name="getAlamat" returnType="String" visibility="public"/>
+        <Method name="setAlamat" returnType="void" visibility="public">
+          <Argument type="String" name="alamat"/>
+        </Method>
+        <Method name="getPass" returnType="String" visibility="public"/>
+        <Method name="setPass" returnType="void" visibility="public">
+          <Argument type="String" name="pass"/>
+        </Method>
+        <Method name="getNo_hp" returnType="String" visibility="public"/>
+        <Method name="setNo_hp" returnType="void" visibility="public">
+          <Argument type="String" name="no_hp"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="absensiguru" package="master" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_absen" type="int" visibility="package"/>
+        <Field name="nm_guru" type="String" visibility="package"/>
+        <Field name="jamber" type="String" visibility="package"/>
+        <Field name="status" type="String" visibility="package"/>
+        <Field name="Keterangan" type="String" visibility="package"/>
+        <Field name="tgl" type="Date" visibility="package"/>
+        <Field name="guru" type="guru" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId_absen" returnType="int" visibility="public"/>
+        <Method name="setId_absen" returnType="void" visibility="public">
+          <Argument type="int" name="id_absen"/>
+        </Method>
+        <Method name="getNm_guru" returnType="String" visibility="public"/>
+        <Method name="setNm_guru" returnType="void" visibility="public">
+          <Argument type="String" name="nm_guru"/>
+        </Method>
+        <Method name="getJamber" returnType="String" visibility="public"/>
+        <Method name="setJamber" returnType="void" visibility="public">
+          <Argument type="String" name="jamber"/>
+        </Method>
+        <Method name="getStatus" returnType="String" visibility="public"/>
+        <Method name="setStatus" returnType="void" visibility="public">
+          <Argument type="String" name="status"/>
+        </Method>
+        <Method name="getKeterangan" returnType="String" visibility="public"/>
+        <Method name="setKeterangan" returnType="void" visibility="public">
+          <Argument type="String" name="Keterangan"/>
+        </Method>
+        <Method name="getGuru" returnType="guru" visibility="public"/>
+        <Method name="setGuru" returnType="void" visibility="public">
+          <Argument type="guru" name="guru"/>
+        </Method>
+        <Method name="getTgl" returnType="Date" visibility="public"/>
+        <Method name="setTgl" returnType="void" visibility="public">
+          <Argument type="Date" name="tgl"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="absensimurid" package="master" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_absen" type="int" visibility="package"/>
+        <Field name="nm_murid" type="String" visibility="package"/>
+        <Field name="status" type="String" visibility="package"/>
+        <Field name="tgl" type="Date" visibility="package"/>
+        <Field name="kelas" type="kelas" visibility="package"/>
+        <Field name="murid" type="murid" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId_absen" returnType="int" visibility="public"/>
+        <Method name="setId_absen" returnType="void" visibility="public">
+          <Argument type="int" name="id_absen"/>
+        </Method>
+        <Method name="getNm_murid" returnType="String" visibility="public"/>
+        <Method name="setNm_murid" returnType="void" visibility="public">
+          <Argument type="String" name="nm_murid"/>
+        </Method>
+        <Method name="getStatus" returnType="String" visibility="public"/>
+        <Method name="setStatus" returnType="void" visibility="public">
+          <Argument type="String" name="status"/>
+        </Method>
+        <Method name="getKelas" returnType="kelas" visibility="public"/>
+        <Method name="setKelas" returnType="void" visibility="public">
+          <Argument type="kelas" name="kelas"/>
+        </Method>
+        <Method name="getMurid" returnType="murid" visibility="public"/>
+        <Method name="setMurid" returnType="void" visibility="public">
+          <Argument type="murid" name="murid"/>
+        </Method>
+        <Method name="getTgl" returnType="Date" visibility="public"/>
+        <Method name="setTgl" returnType="void" visibility="public">
+          <Argument type="Date" name="tgl"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="jadwal" package="master" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_mapel" type="int" visibility="package"/>
+        <Field name="nm_mapel" type="String" visibility="package"/>
+        <Field name="hari" type="String" visibility="package"/>
+        <Field name="jam" type="String" visibility="package"/>
+        <Field name="Ruang" type="String" visibility="package"/>
+        <Field name="kelas" type="kelas" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId_mapel" returnType="int" visibility="public"/>
+        <Method name="setId_mapel" returnType="void" visibility="public">
+          <Argument type="int" name="id_mapel"/>
+        </Method>
+        <Method name="getNm_mapel" returnType="String" visibility="public"/>
+        <Method name="setNm_mapel" returnType="void" visibility="public">
+          <Argument type="String" name="nm_mapel"/>
+        </Method>
+        <Method name="getHari" returnType="String" visibility="public"/>
+        <Method name="setHari" returnType="void" visibility="public">
+          <Argument type="String" name="hari"/>
+        </Method>
+        <Method name="getJam" returnType="String" visibility="public"/>
+        <Method name="setJam" returnType="void" visibility="public">
+          <Argument type="String" name="jam"/>
+        </Method>
+        <Method name="getRuang" returnType="String" visibility="public"/>
+        <Method name="setRuang" returnType="void" visibility="public">
+          <Argument type="String" name="Ruang"/>
+        </Method>
+        <Method name="getKelas" returnType="kelas" visibility="public"/>
+        <Method name="setKelas" returnType="void" visibility="public">
+          <Argument type="kelas" name="kelas"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="kelas" package="master" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_kelas" type="int" visibility="package"/>
+        <Field name="kelas" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId_kelas" returnType="int" visibility="public"/>
+        <Method name="setId_kelas" returnType="void" visibility="public">
+          <Argument type="int" name="id_kelas"/>
+        </Method>
+        <Method name="getKelas" returnType="String" visibility="public"/>
+        <Method name="setKelas" returnType="void" visibility="public">
+          <Argument type="String" name="kelas"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="kurikulum" package="master" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_kurikulum" type="int" visibility="package"/>
+        <Field name="nm_kurikulum" type="String" visibility="package"/>
+        <Field name="isi_kur" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId_kurikulum" returnType="int" visibility="public"/>
+        <Method name="setId_kurikulum" returnType="void" visibility="public">
+          <Argument type="int" name="id_kurikulum"/>
+        </Method>
+        <Method name="getNm_kurikulum" returnType="String" visibility="public"/>
+        <Method name="setNm_kurikulum" returnType="void" visibility="public">
+          <Argument type="String" name="nm_kurikulum"/>
+        </Method>
+        <Method name="getIsi_kur" returnType="String" visibility="public"/>
+        <Method name="setIsi_kur" returnType="void" visibility="public">
+          <Argument type="String" name="isi_kur"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="murid" package="master" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_murid" type="int" visibility="package"/>
+        <Field name="nm_murid" type="String" visibility="package"/>
+        <Field name="kelas" type="kelas" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId_murid" returnType="int" visibility="public"/>
+        <Method name="setId_murid" returnType="void" visibility="public">
+          <Argument type="int" name="id_murid"/>
+        </Method>
+        <Method name="getNm_murid" returnType="String" visibility="public"/>
+        <Method name="setNm_murid" returnType="void" visibility="public">
+          <Argument type="String" name="nm_murid"/>
+        </Method>
+        <Method name="getKelas" returnType="kelas" visibility="public"/>
+        <Method name="setKelas" returnType="void" visibility="public">
+          <Argument type="kelas" name="kelas"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="sarpras" package="master" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_sarpras" type="int" visibility="package"/>
+        <Field name="nm_sarpras" type="String" visibility="package"/>
+        <Field name="jenis_sarpras" type="String" visibility="package"/>
+        <Field name="baik" type="int" visibility="package"/>
+        <Field name="rusakringan" type="int" visibility="package"/>
+        <Field name="rusakberat" type="int" visibility="package"/>
+        <Field name="jumlah" type="int" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId_sarpras" returnType="int" visibility="public"/>
+        <Method name="setId_sarpras" returnType="void" visibility="public">
+          <Argument type="int" name="id_sarpras"/>
+        </Method>
+        <Method name="getNm_sarpras" returnType="String" visibility="public"/>
+        <Method name="setNm_sarpras" returnType="void" visibility="public">
+          <Argument type="String" name="nm_sarpras"/>
+        </Method>
+        <Method name="getJenis_sarpras" returnType="String" visibility="public"/>
+        <Method name="setJenis_sarpras" returnType="void" visibility="public">
+          <Argument type="String" name="jenis_sarpras"/>
+        </Method>
+        <Method name="getBaik" returnType="int" visibility="public"/>
+        <Method name="setBaik" returnType="void" visibility="public">
+          <Argument type="int" name="baik"/>
+        </Method>
+        <Method name="getRusakringan" returnType="int" visibility="public"/>
+        <Method name="setRusakringan" returnType="void" visibility="public">
+          <Argument type="int" name="rusakringan"/>
+        </Method>
+        <Method name="getRusakberat" returnType="int" visibility="public"/>
+        <Method name="setRusakberat" returnType="void" visibility="public">
+          <Argument type="int" name="rusakberat"/>
+        </Method>
+        <Method name="getJumlah" returnType="int" visibility="public"/>
+        <Method name="setJumlah" returnType="void" visibility="public">
+          <Argument type="int" name="jumlah"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="operator" package="operator" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="id_operator" type="int" visibility="package"/>
+        <Field name="username" type="String" visibility="package"/>
+        <Field name="nm_operator" type="String" visibility="package"/>
+        <Field name="pass" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId_operator" returnType="int" visibility="public"/>
+        <Method name="setId_operator" returnType="void" visibility="public">
+          <Argument type="int" name="id_operator"/>
+        </Method>
+        <Method name="getUsername" returnType="String" visibility="public"/>
+        <Method name="setUsername" returnType="void" visibility="public">
+          <Argument type="String" name="username"/>
+        </Method>
+        <Method name="getNm_operator" returnType="String" visibility="public"/>
+        <Method name="setNm_operator" returnType="void" visibility="public">
+          <Argument type="String" name="nm_operator"/>
+        </Method>
+        <Method name="getPass" returnType="String" visibility="public"/>
+        <Method name="setPass" returnType="void" visibility="public">
+          <Argument type="String" name="pass"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="master.absensimurid" target="master.murid" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="master.absensiguru" target="guru.guru" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="master.jadwal" target="master.kelas" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="guru" source="master.absensiguru" target="guru.guru" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="kelas" source="master.absensimurid" target="master.kelas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="murid" source="master.absensimurid" target="master.murid" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="kelas" source="master.jadwal" target="master.kelas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="master.murid" target="master.kelas" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="kelas" source="master.murid" target="master.kelas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="master.absensimurid" target="master.kelas" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
